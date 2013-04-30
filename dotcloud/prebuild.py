@@ -12,4 +12,4 @@ except OSError:
     print "No requirements.txt found, using production config."
 
 print 'Using PRODUCTION mode requirements'
-os.symlink('requirements/production.txt', 'requirements.txt')
+os.symlink('requirements/_base.txt', 'requirements.txt')

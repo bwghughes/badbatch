@@ -3,3 +3,6 @@ test:
 
 ci:
 	sniffer . -x --with-growl
+
+deploy:
+	dotcloud push

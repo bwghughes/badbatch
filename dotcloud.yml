@@ -1,6 +1,6 @@
 www:
     type: python
     prebuild: dotcloud/prebuild.py
-    #postinstall: ./app/postgresql.py
-#db:
-#    type: postgresql
+    postinstall: ./manage.py createdb
+db:
+    type: postgresql
