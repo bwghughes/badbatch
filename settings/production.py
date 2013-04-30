@@ -16,5 +16,5 @@ DATABASE={
     'host': env['DOTCLOUD_DB_SQL_HOST'],
     'port': env['DOTCLOUD_DB_SQL_PORT'],
 }
-SECRET_KEY = 'devkey'
+SECRET_KEY = 'ds65g1drsg56df1gs6r51r8yu1fg6j51f6hik1865gh1ng'
 RECAPTCHA_PUBLIC_KEY = '6Lfol9cSAAAAADAkodaYl9wvQCwBMr3qGR_PPHcw'

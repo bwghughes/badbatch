@@ -9,8 +9,9 @@ Bootstrap(app)
 db = Database(app)
 
 # Register views
-from views import RegisterView
-RegisterView.register(app, route_base="/")
+from views import RegisterView, IndexPageView
+IndexPageView.register(app, route_base="/")
+RegisterView.register(app, route_base="/register")
 
 
 
