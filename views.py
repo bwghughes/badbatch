@@ -14,6 +14,7 @@ class IndexPageView(FlaskView):
 class RegisterView(FlaskView):
     def _create_message(self, phone_number, body):
         if phone_number and body:
+
             return GOOD_SMS_RESPONSE.format(body)
 
     def index(self):

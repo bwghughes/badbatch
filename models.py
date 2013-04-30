@@ -1,6 +1,6 @@
 from app import db
 import datetime
-from peewee import CharField, DateTimeField
+from peewee import CharField, DateTimeField, IntegerField, DecimalField
 
 
 class Subscriber(db.Model):
