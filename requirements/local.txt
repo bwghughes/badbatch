@@ -1,0 +1,10 @@
+# Local development dependencies go here
+-r _base.txt
+coverage
+nose
+Flask-Testing
+nose
+sniffer
+nosegrowl2
+coverage
+sure

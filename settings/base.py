@@ -1,0 +1,16 @@
+import os
+
+SECURITY_PASSWORD_HASH = 'sha512_crypt'
+SECURITY_PASSWORD_SALT = 'fhwp9ehfipucep9wipjnp9ehpiu'
+SECURITY_REGISTERABLE = True
+
+MAIL_SERVER='smtp.sendgrid.net'
+MAIL_PORT=465
+MAIL_USE_SSL=True
+MAIL_USERNAME='bwghughes@gmail.com'
+MAIL_PASSWORD='icbiatwt2'
+SECRET_KEY="O?)H?O?4???9?UP??.A??(?:fR?E?6Th???????"
+
+BOOTSTRAP_USE_CDN=True
+BOOTSTRAP_USE_MINIFIED=True
+BOOTSTRAP_FONTAWESOME=True
