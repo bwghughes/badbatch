@@ -5,5 +5,10 @@ from main import run
 
 manager = Manager(app)
 
+@manager.command
+def createdb():
+    pass
+
+
 if __name__ == "__main__":
     manager.run()

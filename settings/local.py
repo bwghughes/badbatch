@@ -1,3 +1,8 @@
 from .base import *
 
-SQLALCHEMY_DATABASE_URI='postgresql://ben@localhost:5432/royalty_link'
+DATABASE = {
+    'name': 'badbatch',
+    'engine': 'peewee.PostgresqlDatabase',
+    'host': '127.0.0.1',
+    'user': 'ben'
+}
