@@ -14,4 +14,4 @@ CREATE TABLE uk_towns
   CONSTRAINT uk_towns_pkey PRIMARY KEY (id)
 );
 
-COPY uk_towns FROM '/Users/ben/repos/badbatch/data/uk-towns-list' DELIMITERS ',' CSV HEADER;
+COPY uk_towns FROM 'uk-towns.csv' DELIMITERS ',' CSV HEADER;

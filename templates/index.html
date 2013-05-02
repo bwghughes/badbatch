@@ -12,9 +12,9 @@
           <a class="brand" href="#">Bad Batch</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="{{ url_for('IndexPageView:index') }}">Home</a></li>
+              <li><a href="{{ url_for('AlertsView:index') }}">Latest Alerts</a></li>
+              <li><a href="{{ url_for('ContactView:index') }}">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -27,28 +27,36 @@
         <h1>Are you scared the drugs you buy might kill you?</h1>
         <br>
         <p>Sign up to our anonymous service to recieve SMS alerts when there is a bad batch of drugs in your area.</p>
-        <p>Send and SMS to +44 20 0333 1508 with the town or city you want to recieve alerts for.</p>
-        <br>
-        <p><a class="btn btn-primary btn-large">Do it now &raquo;</a></p>
+        <p><strong>Send an SMS to {{ number }}</strong> with the town or city you want to recieve alerts for.</p>
       </div>
-
+      <div class="row">
+        <div class="span12">
+          <div class="alert alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <p><i class="icon-warning-sign"></i>&nbsp;Police have reported a bad batch of Heroin has been reported in Bolton area.</p>
+            <p><i class="icon-warning-sign"></i>&nbsp;Police have reported a bad batch of Heroin has been reported in Burton On Trent area.</p>
+            <p><i class="icon-warning-sign"></i>&nbsp;Doctors have reported a bad batch of Ectasy in the Derby area.</p>
+          </div>
+        </div>
+      </div>
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
           <h2>Drug Users</h2>
-           <p>Be alerted by SMS when the authorities become aware of a bad batch of drugs circulating in your area.</p>
-           <p>Send and SMS to +44 20 0333 1508 with the town or city you want to recieve alerts for.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+           <p>Be alerted by SMS when the authorities become aware of a bad batch of drugs circulating in your area, to avoid harming yourselves.</p>
+           <p>Send and SMS to {{ number }} with the town or city you want to recieve alerts for.</p>
+           <p>If you'd rather not sign up, just check back at <a href="http://www.badbatch.io">Bad Batch</a> for alerts in your area.</p>
+          <p><a class="btn btn-success" href="#">Register &raquo;</a></p>
         </div>
         <div class="span4">
           <h2>Health Authorities</h2>
-           <p>Put out an alert to warn people of bad batches of drugs in your area.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+           <p>Avoid an influx of drug overdoses by putting out an alert to warn people of bad batches of drugs in your area.</p>
+          <p><a class="btn btn-success" href="#">Register &raquo;</a></p>
        </div>
         <div class="span4">
           <h2>Law Enforcement</h2>
-          <p>Put out an alert when you hear of bad batches of drugs in your area.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <p>Quickly limit the fallout from bad batches of drugs in your area by putting out an alert to users.</p>
+          <p><a class="btn btn-success" href="#">Register &raquo;</a></p>
         </div>
       </div>
 

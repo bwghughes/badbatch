@@ -9,10 +9,12 @@ Bootstrap(app)
 db = Database(app)
 
 # Register views
-from views import RegisterView, IndexPageView
+from views import RegisterView, IndexPageView, AlertsView, ContactView, CallView
 IndexPageView.register(app, route_base="/")
 RegisterView.register(app, route_base="/register")
-
+AlertsView.register(app, route_base="/alerts")
+ContactView.register(app, route_base="/contact")
+CallView.register(app, route_base="/voice")
 
 
 
