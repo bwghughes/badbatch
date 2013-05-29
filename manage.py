@@ -25,8 +25,7 @@ def createdb():
 @manager.command
 def seed_towns():
     print "Seeding Towns tables..."
-    towns_file = os.path.join(os.path.abspath(os.path.dirname(__file__)),
-                                             'data/uk-towns-list/uk-towns.csv')
+    towns_file = 'current/data/uk-towns-list/uk-towns.csv'
     print towns_file
     Town.drop_table(fail_silently=True)
     Town.create_table(fail_silently=True)

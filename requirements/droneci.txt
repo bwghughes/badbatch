@@ -1,0 +1,5 @@
+# Local development dependencies go here
+-r _base.txt
+coverage
+Flask-Testing
+nose
